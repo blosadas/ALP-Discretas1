@@ -1,9 +1,0 @@
-E->p
-E->q
-E->r
-E->neg E
-E->E vee E
-E->E wedge E
-E->E rigtharrow E
-E->E leftrightarrow E
-E->( E )
