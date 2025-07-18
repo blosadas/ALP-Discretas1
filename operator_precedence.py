@@ -1,6 +1,7 @@
 import csv
 from inspect import stack
 
+
 # Carga la tabla de precedencia desde CSV
 def load_precedence_table(filename):
     with open(filename, newline='') as file:

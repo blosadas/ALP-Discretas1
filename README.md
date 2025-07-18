@@ -1,1 +1,1 @@
-"# Analizador de L¢gica Proposicional" 
+"# Analizador de LÃ³gica Proposicional" 
