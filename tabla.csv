@@ -1,0 +1,7 @@
+,neg,wedge,vee,rightarrow,leftrightarrow
+neg,>,>,>,>,>
+wedge,<,>,>,>,>
+vee,<,<,>,>,>
+rightarrow,<,<,<,>,>
+leftrightarrow,<,<,<,<,>
+$,neg,wedge,vee,rightarrow,leftrightarrow
