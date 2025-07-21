@@ -63,7 +63,7 @@ analizador_logico/
 
 ## Manual de uso completo
 
-Para más detalles sobre las fórmulas permitidas, ejemplos, edición de jerarquía y errores posibles, consulta el manual completo disponible en este repositorio:
+Para más detalles sobre las fórmulas permitidas, ejemplos, añadir operandos validos, edición de jerarquía y errores posibles, consulta el manual completo disponible en este repositorio:
 
 - [`docs/Manual_de_uso.pdf`](docs/Manual_de_uso.pdf)
 
@@ -72,6 +72,7 @@ Este documento incluye:
 - Tipos de entrada válidos
 - Reglas de sintaxis esperadas
 - Ejemplos funcionales de entrada y salida
+- Cómo añadir operandos válidos
 - Cómo editar la jerarquía en `tabla.csv`
 - Manejo de errores comunes como uso incorrecto de `\neg`
 
