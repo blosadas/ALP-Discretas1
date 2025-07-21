@@ -21,22 +21,22 @@ Este proyecto procesa fórmulas de lógica proposicional escritas en LaTeX (sin 
 
 ## Estructura del proyecto
 
-analizador-logico/
+analizador_logico/
 ├── data/
-│ └── tabla.csv # Tabla de precedencia de operadores
-├── logic/
-│ ├── init.py
-│ ├── parser.py # Parser y construcción del AST
-│ ├── precedence.py # Lector y evaluador de precedencia
-│ └── tokenizer.py # Conversión de fórmulas LaTeX a tokens
-├── utils/
-│ ├── init.py
-│ └── latex_io.py # Formateo de salida en LaTeX
-├── tests/
-│ └── test_parser.py # Pruebas unitarias
-├── main.py # Punto de entrada del programa
+│   └── tabla.csv
 ├── docs/
-│ └── Manual-de-uso.pdf # Manual con instrucciones detalladas
+│   └── Manual-de-uso.pdf
+├── logic/
+│   ├── __init__.py
+│   ├── parser.py
+│   ├── precedence.py
+│   └── tokenizer.py
+├── utils/
+│   ├── __init__.py
+│   └── latex_io.py
+├── tests/
+│   └── test_parser.py
+├── main.py
 ├── README.md
 └── .gitignore
 
