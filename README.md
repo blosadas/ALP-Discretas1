@@ -94,9 +94,9 @@ El archivo `data/tabla.csv` permite redefinir la relación de precedencia (`>, <
 ## Ejecución de pruebas
 
 El proyecto incluye pruebas unitarias (basadas en `unittest`). Para ejecutarlas:
-
+```
 python -m unittest discover tests
-
+```
 ---
 
 ## Licencia
