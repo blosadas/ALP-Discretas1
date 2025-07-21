@@ -45,18 +45,18 @@ analizador_logico/
 ## Uso rápido
 
 1. **Clonar el repositorio**
-
-  git clone https://github.com/TU_USUARIO/analizador-logico.git
+```
+  git clone https://github.com/TU_USUARIO/ALP-Discretas1
   cd analizador-logico
-
+```
 2. **Ejecutar el programa en la terminal**
-
+```
   python main.py
-
+```
 3. **Ingresar una fórmula en LaTeX sin paréntesis**, por ejemplo:
-
+```
   \neg p \rightarrow q \wedge r
-
+```
 4. **Recibirás como salida la misma fórmula bien parentizada**, según la jerarquía de operadores definida.
 
 ---
@@ -107,10 +107,10 @@ Este proyecto está bajo la [Licencia MIT](https://opensource.org/licenses/MIT).
 
 ## Autores
 
-Brandon Losada  
+**Brandon Losada**  
 Universidad Nacional de Colombia
 
-Luis Miguel Sanchez
+**Luis Miguel Sanchez**  
 Universidad Nacional de Colombia
 
 ---
