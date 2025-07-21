@@ -93,7 +93,7 @@ Actualmente se admiten como operandos las letras `p`, `q`, `r`. Para aceptar má
 
 ### Jerarquía de operadores
 
-El archivo `data/tabla.csv` permite redefinir la relación de precedencia (`>, <`) entre conectivos lógicos. Para más información, consulta la sección “Manejo de jerarquía” en el [Manual](docs/Manual_de_uso.pdf).
+El archivo `data/tabla.csv` permite redefinir la relación de precedencia (`>, <, =`) entre conectivos lógicos. Para más información, consulta la sección “Manejo de jerarquía” en el [Manual](docs/Manual_de_uso.pdf).
 
 ---
 
