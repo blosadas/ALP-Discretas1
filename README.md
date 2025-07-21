@@ -20,12 +20,12 @@ Este proyecto procesa fórmulas de lógica proposicional escritas en LaTeX (sin 
 ---
 
 ## Estructura del proyecto
-
+```
 analizador_logico/
 ├── data/
 │   └── tabla.csv
 ├── docs/
-│   └── Manual-de-uso.pdf
+│   └── Manual_de_uso.pdf
 ├── logic/
 │   ├── __init__.py
 │   ├── parser.py
@@ -39,23 +39,23 @@ analizador_logico/
 ├── main.py
 ├── README.md
 └── .gitignore
-
+```
 ---
 
 ## Uso rápido
 
 1. **Clonar el repositorio**
 
-git clone https://github.com/TU_USUARIO/analizador-logico.git
-cd analizador-logico
+  git clone https://github.com/TU_USUARIO/analizador-logico.git
+  cd analizador-logico
 
 2. **Ejecutar el programa en la terminal**
 
-python main.py
+  python main.py
 
 3. **Ingresar una fórmula en LaTeX sin paréntesis**, por ejemplo:
 
-\neg p \rightarrow q \wedge r
+  \neg p \rightarrow q \wedge r
 
 4. **Recibirás como salida la misma fórmula bien parentizada**, según la jerarquía de operadores definida.
 
@@ -65,7 +65,7 @@ python main.py
 
 Para más detalles sobre las fórmulas permitidas, ejemplos, edición de jerarquía y errores posibles, consulta el manual completo disponible en este repositorio:
 
-- [`docs/Manual-de-uso.pdf`](docs/Manual-de-uso.pdf)
+- [`docs/Manual_de_uso.pdf`](docs/Manual_de_uso.pdf)
 
 Este documento incluye:
 
@@ -74,12 +74,6 @@ Este documento incluye:
 - Ejemplos funcionales de entrada y salida
 - Cómo editar la jerarquía en `tabla.csv`
 - Manejo de errores comunes como uso incorrecto de `\neg`
-
----
-
-## Documentación y Manual de Uso
-
-- [Manual](docs/Manual_de_uso.pdf)
 
 ---
 
