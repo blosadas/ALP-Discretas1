@@ -22,63 +22,33 @@ class LaTeXTokenizer:
         self.all_operators = self.binary_operators.union(self.unary_operators)
     
     def tokenize(self, formula):
-        """
-        Tokeniza una fórmula LaTeX convirtiéndola en tokens internos
-        
-        Args:
-            formula (str): Fórmula en LaTeX
-            
-        Returns:
-            list: Lista de tokens
-            
-        Raises:
-            ValueError: Si la fórmula contiene tokens inválidos
-        """
+        """Convierte una fórmula LaTeX en una lista de tokens internos."""
         if not formula or not formula.strip():
             raise ValueError("La fórmula no puede estar vacía")
-        
-        # Aplicar reemplazos LaTeX
-        processed_formula = formula
+
+        processed = formula
         for latex_op, internal_op in self.latex_replacements.items():
-            processed_formula = processed_formula.replace(latex_op, internal_op)
-        
-        # Dividir en tokens
-        tokens = processed_formula.split()
-        
-        # Validar tokens
+            processed = processed.replace(latex_op, internal_op)
+
+        tokens = processed.split()
         self._validate_tokens(tokens)
-        
         return tokens
-    
+
     def _validate_tokens(self, tokens):
-        """
-        Valida que todos los tokens sean reconocidos
-        
-        Args:
-            tokens (list): Lista de tokens a validar
-            
-        Raises:
-            ValueError: Si hay tokens inválidos
-        """
-        valid_tokens = self.all_operators.union(self.operands)
-        
+        """Lanza error si algún token no es válido."""
+        valid = self.all_operators.union(self.operands)
         for token in tokens:
-            if token not in valid_tokens:
-                raise ValueError(f"Token inválido: '{token}'. "
-                               f"Tokens válidos: {sorted(valid_tokens)}")
-    
+            if token not in valid:
+                raise ValueError(f"Token inválido: '{token}'. Válidos: {sorted(valid)}")
+
     def is_operand(self, token):
-        """Verifica si un token es un operando"""
         return token in self.operands
-    
+
     def is_operator(self, token):
-        """Verifica si un token es un operador"""
         return token in self.all_operators
-    
+
     def is_binary_operator(self, token):
-        """Verifica si un token es un operador binario"""
         return token in self.binary_operators
-    
+
     def is_unary_operator(self, token):
-        """Verifica si un token es un operador unario"""
         return token in self.unary_operators

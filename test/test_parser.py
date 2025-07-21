@@ -1,7 +1,3 @@
-"""
-Tests básicos para el analizador de lógica proposicional
-"""
-
 import unittest
 import sys
 import os

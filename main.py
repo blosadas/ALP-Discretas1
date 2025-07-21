@@ -1,8 +1,3 @@
-"""
-Analizador de Lógica Proposicional - Punto de entrada principal
-Autor: Brandon Losada
-"""
-
 from logic.parser import LogicParser
 from logic.precedence import PrecedenceManager
 from logic.tokenizer import LaTeXTokenizer
