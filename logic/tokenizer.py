@@ -1,7 +1,7 @@
 """
 Módulo para tokenizar fórmulas de lógica proposicional en LaTeX
 """
-
+import string
 class LaTeXTokenizer:
     """Tokenizador para fórmulas LaTeX de lógica proposicional"""
     
@@ -18,7 +18,7 @@ class LaTeXTokenizer:
         # Operadores y operandos válidos
         self.binary_operators = {'vee', 'wedge', 'rightarrow', 'leftrightarrow'}
         self.unary_operators = {'neg'}
-        self.operands = {'p', 'q', 'r'}
+        self.operands = set(string.ascii_lowercase)
         self.all_operators = self.binary_operators.union(self.unary_operators)
     
     def tokenize(self, formula):
