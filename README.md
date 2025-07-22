@@ -72,7 +72,6 @@ Este documento incluye:
 - Tipos de entrada válidos
 - Reglas de sintaxis esperadas
 - Ejemplos funcionales de entrada y salida
-- Cómo añadir operandos válidos
 - Cómo editar la jerarquía en `tabla.csv`
 - Manejo de errores comunes como uso incorrecto de `\neg`
 
@@ -82,7 +81,7 @@ Este documento incluye:
 
 ### Operandos válidos
 
-Actualmente se admiten como operandos las letras `p`, `q`, `r`. Para aceptar más variables, edita `logic/tokenizer.py`: como lo indica la sección "Añadir operandos" en el [Manual](docs/Manual_de_uso.pdf).
+Actualmente se admiten como operandos las letras `p`, `q`, `r`. El programa acepta cualquier letra minuscula como operando.
 
 
 
