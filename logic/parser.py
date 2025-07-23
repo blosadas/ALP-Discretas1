@@ -60,7 +60,7 @@ class LogicParser:
                     raise ValueError(f"'{token}' requiere un operando")
 
                 operand = stack.pop()
-                stack.append(f"\\neg {operand}")
+                stack.append(f"\\neg ({operand})")
 
             elif self.tokenizer.is_binary_operator(token):
                 if len(stack) < 2:

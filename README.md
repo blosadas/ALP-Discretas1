@@ -81,7 +81,7 @@ Este documento incluye:
 
 ### Operandos válidos
 
-Actualmente se admiten como operandos las letras `p`, `q`, `r`. El programa acepta cualquier letra minuscula como operando.
+El programa acepta cualquier letra minuscula como operando.
 
 
 

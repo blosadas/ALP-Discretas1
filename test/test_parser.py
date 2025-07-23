@@ -22,7 +22,7 @@ class TestLogicParser(unittest.TestCase):
         """Test para negación simple"""
         tokens = self.tokenizer.tokenize("\\neg p")
         result = self.parser.parse_to_ast(tokens)
-        self.assertEqual(result, "\\neg p")
+        self.assertEqual(result, "\\neg (p)")
     
     def test_binary_operation(self):
         """Test para operaciones binarias"""
@@ -35,6 +35,12 @@ class TestLogicParser(unittest.TestCase):
         tokens = self.tokenizer.tokenize("p \\vee q \\wedge r")
         result = self.parser.parse_to_ast(tokens)
         self.assertEqual(result, "(p \\vee (q \\wedge r))")
+
+    def test_negation_with_binary_operation(self):
+        """Test para negación con operación binaria"""
+        tokens = self.tokenizer.tokenize("p \\leftrightarrow \\neg q")
+        result = self.parser.parse_to_ast(tokens)
+        self.assertEqual(result, "(p \\leftrightarrow \\neg (q))")
 
 if __name__ == '__main__':
     unittest.main()
