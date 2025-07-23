@@ -16,8 +16,11 @@ class LogicParser:
         if not tokens:
             raise ValueError("No se pueden procesar tokens vacíos")
 
+        print("TOKENS:", tokens)  # Verifica los tokens
         postfix = self._to_postfix(tokens)
-        return self._postfix_to_latex(postfix)
+        result = self._postfix_to_latex(postfix)
+        print("RESULTADO:", result)  # Verifica el resultado
+        return result
 
     def _to_postfix(self, tokens):
         """
@@ -60,7 +63,7 @@ class LogicParser:
                     raise ValueError(f"'{token}' requiere un operando")
 
                 operand = stack.pop()
-                stack.append(f"\\neg {operand}")
+                stack.append(f"\\neg ({operand})")
 
             elif self.tokenizer.is_binary_operator(token):
                 if len(stack) < 2:
